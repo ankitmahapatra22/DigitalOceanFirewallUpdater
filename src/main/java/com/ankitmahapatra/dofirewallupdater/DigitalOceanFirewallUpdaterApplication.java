@@ -14,15 +14,15 @@ public class DigitalOceanFirewallUpdaterApplication {
     }
     
     private String getMyPublicIPAddress() throws UnknownHostException
-        {
-            String ipify = "https://api.ipify.org/";
-		    try {
-			    Scanner scanner = new Scanner(new URL(ipify).openStream(), "UTF-8").useDelimiter("\\A");
-			    return scanner.next();
-		    } 
-            catch (IOException exception) {
-			    exception.printStackTrace();
-		    }
-		    return "";
-        }
+    {
+    	String ipify = "https://api.ipify.org/";
+	try {
+	    Scanner scanner = new Scanner(new URL(ipify).openStream(), "UTF-8").useDelimiter("\\A");
+	    return scanner.next();
+	} 
+        catch (IOException exception) {
+	    exception.printStackTrace();
+	}
+	return "";
+    }
 }
