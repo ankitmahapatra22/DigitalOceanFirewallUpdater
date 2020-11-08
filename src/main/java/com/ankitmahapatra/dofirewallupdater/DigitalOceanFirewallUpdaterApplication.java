@@ -13,7 +13,7 @@ public class DigitalOceanFirewallUpdaterApplication {
     	System.out.println(" Starting with firewall update ...");
     }
     
-    private String getMyPublicIPAddress() throws UnknownHostException
+    private String getMyPublicIPAddress()
     {
     	String ipify = "https://api.ipify.org/";
 	try {
